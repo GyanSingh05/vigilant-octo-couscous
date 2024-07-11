@@ -47,7 +47,7 @@ void merge(int* arr, int st , int mid , int nd){
         }
 
 
-
+        
 
 
     }
@@ -66,7 +66,8 @@ void merge(int* arr, int st , int mid , int nd){
         kptr++;
     }
         
-
+    delete[] ist;
+    delete[] sec;
 
 }
 void mergesort(int* arr,int st, int nd){
@@ -101,8 +102,8 @@ int main()
         cin >> arr[i];
     }
     
+    
     algo::mergesort(arr,0,n-1);
-
    
 
     for (int i = 0; i < n; i++)
@@ -110,7 +111,7 @@ int main()
         cout << arr[i] << " ";
     }
     
-
+    
 
    return 0;
 }
